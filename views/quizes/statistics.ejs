@@ -1,0 +1,11 @@
+<h4 id="tit_statistics">Estadísticas</h4>
+<br>
+<div class="statistics">
+<table>
+  <tr><td><strong><em>Número de preguntas</em></strong> </td><td id="col2"> <span id="resul"><%= statistics.preguntas %></span></td></tr>
+  <tr><td><strong><em>Número de comentarios</em></strong> </td><td id="col2"> <span id="resul"><%= statistics.comentarios %></span></td></tr>
+  <tr><td><strong><em>Número medio de comentarios por pregunta</em></strong> </td><td id="col2"> <span id="resul"><%= (statistics.comentarios / statistics.preguntas).toFixed(2) %></span></td></tr>
+  <tr><td><strong><em>Número de preguntas sin comentarios</em></strong> </td><td id="col2"> <span id="resul"><%= statistics.preguntas - statistics.preguntasComentadas %></span></td></tr>
+  <tr><td><strong><em>Número de preguntas con comentarios</em></strong> </td><td id="col2"> <span id="resul"><%= statistics.preguntasComentadas %></span></td></tr>
+</table>
+</div>
